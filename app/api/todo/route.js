@@ -1,5 +1,5 @@
-import { db } from '../../../db/db';
-import { todosTable } from '../../../db/schema';
+import { db } from '@/server/db/db';
+import { todosTable } from '@/server/db/schema';
 
 export const runtime = 'edge';
 
@@ -20,5 +20,5 @@ export async function POST(request) {
     })
     .returning();
 
-  return Response.json({ object: 'customer', data: result[0] });
+  return Response.json({ object: 'todos', data: result[0] });
 }
