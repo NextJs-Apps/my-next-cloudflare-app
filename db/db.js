@@ -1,0 +1,20 @@
+import {drizzle} from "drizzle-orm/d1";
+import * as schema from "./schema"
+export const db = drizzle(process.env.DB, {schema})
+
+
+// import { getRequestContext } from '@cloudflare/next-on-pages';
+
+// export const runtime = 'edge';
+
+// function initDbConnection() {
+//   if (process.env.NODE_ENV === 'development') {
+//     const { env } = getRequestContext();
+
+//     return drizzle(env.DB, { schema });
+//   }
+
+//   return drizzle(process.env.DB, { schema });
+// }
+
+// export const db = initDbConnection();
