@@ -1,5 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`c3`](https://developers.cloudflare.com/pages/get-started/c3).
-
+gg
 ## Getting Started
 Project created with npm create cloudflare@latest my-next-cloudflare-app -- --framework=next
 First, run the development server:
